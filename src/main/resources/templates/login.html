@@ -17,7 +17,7 @@
 			<div class="col-4 offset-4">
 				<div class="bg-danger" th:if="${param.error}">Invalid username
 					or password.</div>
-				<div class="bg-danger" th:if="${param.logout}">You have
+				<div class="bg-primary" th:if="${param.logout}">You have
 					successfully logged out.</div>
 				<form class="form-signin" th:action="@{/login}" method="post">
 					<h2 class="form-signin-heading">Please Sign In</h2>

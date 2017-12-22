@@ -13,7 +13,7 @@
 
 <!-- Custom styles for this template -->
 <link th:href="@{/css/style.css}" rel="stylesheet" />
-<link rel="icon" href="/image/apple-touch-icon.png" />
+<link rel="icon" th:href="@{/image/apple-touch-icon.png}" />
 </head>
 
 <body>
@@ -31,20 +31,17 @@
 
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a class="nav-link" href="#">Home
-							<span class="sr-only">(current)</span>
-					</a></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 						role="button" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false"> Book </a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Add a new book</a> <a
+							<a class="dropdown-item" th:href="@{book/add}">Add a new book</a> <a
 								class="dropdown-item" href="#">View book list</a>
 						</div></li>
 				</ul>
 				<ul class="navbar-nav navbar-right">
-					<li><a href="#">Sign out</a></li>
+					<li><a class="dropdown-item" th:href="@{/logout}">Sign out</a></li>
 				</ul>
 			</div>
 		</nav>
