@@ -115,7 +115,7 @@
 					<div class="form-group">
 						<label class="col-md-2 col-form-label" for="isbn">ISBN</label>
 						<div class="col-md-8">
-							<input type="text" class="form-control" id="isbn" name="isbn"
+							<input type="number" class="form-control" id="isbn" name="isbn"
 								placeholder="ISBN" th:value="${book.isbn}" /> <small
 								class="form-text text-muted">ISBN of the book.</small>
 						</div>
@@ -126,7 +126,7 @@
 							Weight</label>
 						<div class="col-md-8">
 							<div class="input-group">
-								<input type="number" class="form-control" id="shippingWeight"
+								<input type="number" min="0.01" step="0.01" class="form-control" id="shippingWeight"
 									placeholder="Shipping Weight" name="shippingWeight"
 									th:value="${book.shippingWeight}" /> <span
 									class="input-group-addon">Ounces</span>
@@ -140,7 +140,7 @@
 							Price</label>
 						<div class="col-md-8">
 							<div class="input-group">
-								<span class="input-group-addon">$</span> <input type="number"
+								<span class="input-group-addon">$</span> <input type="number" min="0.01" step="0.01"
 									class="form-control" name="listPrice" id="listPrice"
 									placeholder="List Price" th:value="${book.listPrice}" />
 							</div>
@@ -154,7 +154,7 @@
 							Price</label>
 						<div class="col-md-8">
 							<div class="input-group">
-								<span class="input-group-addon">$</span> <input type="number"
+								<span class="input-group-addon">$</span> <input type="number" min="0.01" step="0.01"
 									class="form-control" name="ourPrice" id="ourPrice"
 									placeholder="Our Price" th:value="${book.ourPrice}" />
 							</div>
