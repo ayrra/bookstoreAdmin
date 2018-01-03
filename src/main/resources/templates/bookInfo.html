@@ -57,10 +57,10 @@
 								th:text="${book.shippingWeight}"></span>
 						</p>
 						<p>
-							<strong>List Price: </strong><span th:text="${book.listPrice}"></span>
+							<strong>List Price: </strong><span th:text="${#numbers.formatDecimal(book.listPrice, 0, 'COMMA', 2, 'POINT')}"></span>
 						</p>
 						<p>
-							<strong>Our Price: </strong><span th:text="${book.ourPrice}"></span>
+							<strong>Our Price: </strong><span th:text="${#numbers.formatDecimal(book.ourPrice, 0, 'COMMA', 2, 'POINT')}"></span>
 						</p>
 						<p>
 							<strong>Number in Stock: </strong><span

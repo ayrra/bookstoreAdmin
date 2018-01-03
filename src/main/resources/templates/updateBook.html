@@ -8,6 +8,7 @@
 		<div class="row">
 			<form class="col-12" th:action="@{/book/updateBook}" method="post"
 				enctype="multipart/form-data">
+				<input hidden="hidden" name="id" th:value="${book.id}" />
 				<fieldset>
 					<legend class="col-form-legend">
 						Update Book Information <span style="font-size: small;">* is a
