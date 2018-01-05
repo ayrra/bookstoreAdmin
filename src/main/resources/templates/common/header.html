@@ -13,6 +13,7 @@
 
 <!-- Custom styles for this template -->
 <link th:href="@{/css/style.css}" rel="stylesheet" />
+<link th:href="@{/css/jquery.dataTables.min.css}" rel="stylesheet" />
 <link rel="icon" th:href="@{/image/apple-touch-icon.png}" />
 </head>
 
@@ -63,6 +64,14 @@
 			integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
 			crossorigin="anonymous"></script>
 		<script th:src="@{/js/bootstrap.min.js}"></script>
+		<script th:src="@{/js/jquery.dataTables.min.js}"></script>
+		<script src="https://use.fontawesome.com/6641a257d9.js"></script>
+		<script th:src="@{/js/tinymce/tinymce.min.js}"></script>
+		<script th:src="@{/js/tinymce/jquery.tinymce.min.js}"></script>
+ 		<script>tinymce.init({
+ 			selector:'textarea',
+ 			plugins: 'code link image media insertdatetime'
+ 			});</script>
 	</div>
 </body>
 </html>
