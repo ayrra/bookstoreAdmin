@@ -182,13 +182,13 @@
 						<label class="col-md-2 control-label" for="active">Status</label>
 						<div class="col-md-8">
 							<div class="form-check form-check-inline">
-								<label class="form-check-label"> <input
+								<label class="form-check-label"> <input th:checked="${book.active}"
 									class="form-check-input" type="radio" name="active"
 									value="true" /> Active
 								</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<label class="form-check-label"> <input
+								<label class="form-check-label"> <input th:checked="${!book.active}"
 									class="form-check-input" type="radio" name="active"
 									value="false" /> Inactive
 								</label>

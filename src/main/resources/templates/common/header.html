@@ -37,9 +37,9 @@
 						role="button" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false"> Book </a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" th:href="@{/book/add}">Add a new book</a>
-							<a class="dropdown-item" th:href="@{/book/bookList}">View book
-								list</a>
+							<a class="dropdown-item" th:href="@{/book/add}">Add a new
+								book</a> <a class="dropdown-item" th:href="@{/book/bookList}">View
+								book list</a>
 						</div></li>
 				</ul>
 				<ul class="navbar-nav navbar-right">
@@ -52,8 +52,8 @@
 		<!-- Bootstrap core JavaScript
     ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			crossorigin="anonymous"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
@@ -67,11 +67,15 @@
 		<script th:src="@{/js/jquery.dataTables.min.js}"></script>
 		<script src="https://use.fontawesome.com/6641a257d9.js"></script>
 		<script th:src="@{/js/tinymce/tinymce.min.js}"></script>
+		<script th:src="@{/js/bootbox.js}"></script>
+		<script th:src="@{/js/scripts.js}"></script>
 		<script th:src="@{/js/tinymce/jquery.tinymce.min.js}"></script>
- 		<script>tinymce.init({
- 			selector:'textarea',
- 			plugins: 'code link image media insertdatetime'
- 			});</script>
+		<script>
+			tinymce.init({
+				selector : 'textarea',
+				plugins : 'code link image media insertdatetime'
+			});
+		</script>
 	</div>
 </body>
 </html>
